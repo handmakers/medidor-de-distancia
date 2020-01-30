@@ -7,7 +7,7 @@
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation; either version 3 of the License, or
 * (at your option) any later version.
-*
+*Utilizar a biblioteca 
 */
 
 // Declaração de bibliotecas
@@ -16,7 +16,8 @@
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27,16,2);
+LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7,3, POSITIVE); 
+
 
 
 //calculations
