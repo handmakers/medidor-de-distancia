@@ -7,7 +7,7 @@
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation; either version 3 of the License, or
 * (at your option) any later version.
-*Utilizar a biblioteca 
+*Utilizar a biblioteca NewLiquidCrystal_1.5.1.zip
 */
 
 // Declaração de bibliotecas
@@ -30,13 +30,13 @@ LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7,3, POSITIVE);
 
 //storage variables
 int reedVal;
-long timer;// time between one full rotation (in ms)
+long timer;// time between one full rotation tempo entre uma volta completa(in ms)
 float mph;
 float time_th;
 float distance_traveled;
 float kmph;
 float time_t = 0;
-float radius = 27.5;// tire radius (in inches)
+float radius = 13.5;//raio pneu(em polegadas)
 float circumference;
 
 int maxReedCounter = 100;//min time (in ms) of one rotation (for debouncing)
